@@ -13,7 +13,11 @@ public class ChasseTaupe : MonoBehaviour
             GameObject taupe = Taupes[i];
             if (taupe != null)
             {
-                taupe.transform.position += new Vector3(0,-1,0);
+                string name = taupe.name;
+                GameObject taupeCorps = GameObject.Find(name+"/Diglett Body");
+                GameObject taupeNez = GameObject.Find(name + "/Diglett Nose");
+                taupeCorps.transform.position += new Vector3(0,-1,0);
+                taupeNez.transform.position += new Vector3(0,-1,0);
             }
         }
     }
