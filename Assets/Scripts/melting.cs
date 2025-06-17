@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class melting : MonoBehaviour
 {
-    [SerializeField] private float shrinkDuration = 10.0f;
+    [SerializeField] private float shrinkDuration = 25.0f;
 
     private readonly Vector3 targetScale = new Vector3(0.00004f, 0.00004f, 0.00004f);
 
