@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SpawnCrystalOnInteract : MonoBehaviour
 {
     public GameObject crystalPrefab;
+    public GameObject firePrefab;
     public Transform spawnPoint;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
@@ -16,9 +17,10 @@ public class SpawnCrystalOnInteract : MonoBehaviour
 
     void OnSelect(SelectEnterEventArgs args)
     {
-        if (crystalPrefab != null && spawnPoint != null)
+        if (crystalPrefab != null && firePrefab != null && spawnPoint != null)
         {
             Instantiate(crystalPrefab, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(firePrefab, spawnPoint.position, spawnPoint.rotation);
         }
     }
 }
