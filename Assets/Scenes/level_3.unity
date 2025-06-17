@@ -1144,6 +1144,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991426416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8988371223026793012, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 136847272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2042032779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1258,6 +1269,10 @@ PrefabInstance:
       propertyPath: m_Colliders.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6804386966084378141, guid: f6ee59c8acc62d64b852c6f344b39f2b, type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 1991426416}
     - target: {fileID: 6804386966084378141, guid: f6ee59c8acc62d64b852c6f344b39f2b, type: 3}
       propertyPath: 'm_Colliders.Array.data[0]'
       value: 
