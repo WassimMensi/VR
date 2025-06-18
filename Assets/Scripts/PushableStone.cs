@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PushableStone : MonoBehaviour
 {
-    public float targetZRotation = -20f;          
-    public float pushDuration = 0.2f;            
-    public GameObject[] lasersToDisable;           
+    public float targetZRotation = -20f;
+    public float pushDuration = 0.2f;
+    public GameObject[] lasersToDisable;
 
     private bool isPushed = false;
     private Quaternion originalRotation;
@@ -23,12 +23,6 @@ public class PushableStone : MonoBehaviour
         {
             isPushed = true;
             timer = 0f;
-
-            foreach (GameObject laser in lasersToDisable)
-            {
-                if (laser != null)
-                    Destroy(laser);
-            }
         }
     }
 
@@ -38,7 +32,17 @@ public class PushableStone : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = Mathf.Clamp01(timer / pushDuration);
-            transform.localRotation = Quaternion.Lerp(originalRotation, targetRotation, t);
+            transform.localRotation = Quaternion.Slerp(originalRotation, targetRotation, t);
+
+            if (t >= 1f)
+            {
+                // Rotation terminée, détruire les lasers
+                foreach (GameObject laser in lasersToDisable)
+                {
+                    if (laser != null)
+                        Destroy(laser);
+                }
+            }
         }
     }
 }

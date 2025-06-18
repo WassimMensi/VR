@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 40091045}
   - component: {fileID: 40091049}
   - component: {fileID: 40091050}
-  m_Layer: 0
+  - component: {fileID: 40091051}
+  m_Layer: 6
   m_Name: VolumetricLine red (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +247,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!114 &40091050
 MonoBehaviour:
@@ -261,6 +262,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &40091051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40091044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1 &60300268
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +297,8 @@ GameObject:
   - component: {fileID: 60300271}
   - component: {fileID: 60300270}
   - component: {fileID: 60300274}
-  m_Layer: 0
+  - component: {fileID: 60300275}
+  m_Layer: 6
   m_Name: VolumetricLine red (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +339,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &60300271
 MeshRenderer:
@@ -403,6 +426,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &60300275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60300268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!43 &92842452
 Mesh:
   m_ObjectHideFlags: 0
@@ -2980,7 +3024,8 @@ GameObject:
   - component: {fileID: 742716939}
   - component: {fileID: 742716938}
   - component: {fileID: 742716942}
-  m_Layer: 0
+  - component: {fileID: 742716943}
+  m_Layer: 6
   m_Name: VolumetricLine red (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3021,7 +3066,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &742716939
 MeshRenderer:
@@ -3108,6 +3153,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &742716943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742716936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1 &798741513
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,7 +3867,8 @@ GameObject:
   - component: {fileID: 1018526667}
   - component: {fileID: 1018526666}
   - component: {fileID: 1018526665}
-  m_Layer: 0
+  - component: {fileID: 1018526670}
+  m_Layer: 6
   m_Name: VolumetricLine red (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3855,7 +3922,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1018526667
 MeshRenderer:
@@ -3929,6 +3996,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018526663}
   m_Mesh: {fileID: 1160602270}
+--- !u!65 &1018526670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018526663}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1 &1026902185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,7 +4031,8 @@ GameObject:
   - component: {fileID: 1026902188}
   - component: {fileID: 1026902187}
   - component: {fileID: 1026902191}
-  m_Layer: 0
+  - component: {fileID: 1026902192}
+  m_Layer: 6
   m_Name: VolumetricLine red (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3984,7 +4073,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1026902188
 MeshRenderer:
@@ -4071,6 +4160,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &1026902192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026902185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1 &1054700850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +4304,8 @@ GameObject:
   - component: {fileID: 1073287124}
   - component: {fileID: 1073287123}
   - component: {fileID: 1073287127}
-  m_Layer: 0
+  - component: {fileID: 1073287128}
+  m_Layer: 6
   m_Name: VolumetricLine red (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4235,7 +4346,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1073287124
 MeshRenderer:
@@ -4322,6 +4433,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &1073287128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073287121}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!21 &1084597585
 Material:
   serializedVersion: 8
@@ -4696,7 +4828,8 @@ GameObject:
   - component: {fileID: 1258491358}
   - component: {fileID: 1258491362}
   - component: {fileID: 1258491363}
-  m_Layer: 0
+  - component: {fileID: 1258491364}
+  m_Layer: 6
   m_Name: VolumetricLine red (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4809,7 +4942,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!114 &1258491363
 MonoBehaviour:
@@ -4824,6 +4957,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &1258491364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258491357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1001 &1287928869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4886,92 +5040,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6017185526312758343, guid: da72d4132df97494d803ba6f206bb126, type: 3}
   m_PrefabInstance: {fileID: 1287928869}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1312579053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1312579054}
-  - component: {fileID: 1312579056}
-  - component: {fileID: 1312579055}
-  m_Layer: 0
-  m_Name: GhostWall_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1312579054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312579053}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.36, y: 4, z: 12}
-  m_LocalScale: {x: 1.4852529, y: 1, z: 0.99806}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596403444}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!23 &1312579055
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312579053}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 88cc704f3ec4ab14ebc9fbbc707f53ac, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1312579056
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312579053}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!21 &1325187805
 Material:
   serializedVersion: 8
@@ -5858,7 +5926,8 @@ GameObject:
   - component: {fileID: 1461377071}
   - component: {fileID: 1461377070}
   - component: {fileID: 1461377069}
-  m_Layer: 0
+  - component: {fileID: 1461377074}
+  m_Layer: 6
   m_Name: VolumetricLine red (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5912,7 +5981,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1461377071
 MeshRenderer:
@@ -5986,6 +6055,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461377067}
   m_Mesh: {fileID: 352574380}
+--- !u!65 &1461377074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461377067}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1 &1461711899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6104,7 +6194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468616898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6870,8 +6960,6 @@ Transform:
   - {fileID: 1482470056}
   - {fileID: 1737924250}
   - {fileID: 1461711900}
-  - {fileID: 1312579054}
-  - {fileID: 2047924219}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1620942421
@@ -6970,7 +7058,8 @@ GameObject:
   - component: {fileID: 1667446793}
   - component: {fileID: 1667446797}
   - component: {fileID: 1667446798}
-  m_Layer: 0
+  - component: {fileID: 1667446799}
+  m_Layer: 6
   m_Name: VolumetricLine red (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7083,7 +7172,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!114 &1667446798
 MonoBehaviour:
@@ -7098,6 +7187,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &1667446799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667446792}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1001 &1680435414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7174,7 +7284,8 @@ GameObject:
   - component: {fileID: 1683480689}
   - component: {fileID: 1683480688}
   - component: {fileID: 1683480687}
-  m_Layer: 0
+  - component: {fileID: 1683480692}
+  m_Layer: 6
   m_Name: VolumetricLine red (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7228,7 +7339,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1683480689
 MeshRenderer:
@@ -7302,6 +7413,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683480685}
   m_Mesh: {fileID: 1352756742}
+--- !u!65 &1683480692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683480685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1001 &1719544830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7934,7 +8066,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1756133389}
         m_TargetAssemblyTypeName: PushableStone, Assembly-CSharp
         m_MethodName: PushStone
         m_Mode: 1
@@ -8001,7 +8133,8 @@ GameObject:
   - component: {fileID: 1771219286}
   - component: {fileID: 1771219285}
   - component: {fileID: 1771219284}
-  m_Layer: 0
+  - component: {fileID: 1771219289}
+  m_Layer: 6
   m_Name: VolumetricLine red (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8055,7 +8188,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1771219286
 MeshRenderer:
@@ -8129,6 +8262,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771219282}
   m_Mesh: {fileID: 2080699402}
+--- !u!65 &1771219289
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771219282}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!43 &1840215709
 Mesh:
   m_ObjectHideFlags: 0
@@ -8390,7 +8544,8 @@ GameObject:
   - component: {fileID: 1846604349}
   - component: {fileID: 1846604348}
   - component: {fileID: 1846604352}
-  m_Layer: 0
+  - component: {fileID: 1846604353}
+  m_Layer: 6
   m_Name: VolumetricLine red (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8431,7 +8586,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &1846604349
 MeshRenderer:
@@ -8518,6 +8673,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &1846604353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846604346}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!21 &1877650893
 Material:
   serializedVersion: 8
@@ -9059,92 +9235,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6017185526312758343, guid: da72d4132df97494d803ba6f206bb126, type: 3}
   m_PrefabInstance: {fileID: 2042032779}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2047924218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2047924219}
-  - component: {fileID: 2047924221}
-  - component: {fileID: 2047924220}
-  m_Layer: 0
-  m_Name: GhostWall_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2047924219
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047924218}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 12, y: 4, z: 10.66}
-  m_LocalScale: {x: 1.4381024, y: 1, z: 0.99806}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596403444}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
---- !u!23 &2047924220
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047924218}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 88cc704f3ec4ab14ebc9fbbc707f53ac, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2047924221
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047924218}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2056392306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9766,7 +9856,8 @@ GameObject:
   - component: {fileID: 2066972630}
   - component: {fileID: 2066972635}
   - component: {fileID: 2066972636}
-  m_Layer: 0
+  - component: {fileID: 2066972637}
+  m_Layer: 6
   m_Name: VolumetricLine red (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9879,7 +9970,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!114 &2066972636
 MonoBehaviour:
@@ -9894,6 +9985,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &2066972637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066972629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!43 &2080699402
 Mesh:
   m_ObjectHideFlags: 0
@@ -10073,7 +10185,8 @@ GameObject:
   - component: {fileID: 2087072301}
   - component: {fileID: 2087072300}
   - component: {fileID: 2087072304}
-  m_Layer: 0
+  - component: {fileID: 2087072305}
+  m_Layer: 6
   m_Name: VolumetricLine red (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10114,7 +10227,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!23 &2087072301
 MeshRenderer:
@@ -10201,6 +10314,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &2087072305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087072298}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!21 &2116016943
 Material:
   serializedVersion: 8
@@ -10297,7 +10431,8 @@ GameObject:
   - component: {fileID: 2123678094}
   - component: {fileID: 2123678098}
   - component: {fileID: 2123678099}
-  m_Layer: 0
+  - component: {fileID: 2123678100}
+  m_Layer: 6
   m_Name: VolumetricLine red (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10410,7 +10545,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Size: {x: 1.9, y: 8.5, z: 1.9}
   m_Center: {x: 0, y: -4, z: 0}
 --- !u!114 &2123678099
 MonoBehaviour:
@@ -10425,6 +10560,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 8, y: 4, z: -1}
+--- !u!65 &2123678100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123678093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.5, z: 2}
+  m_Center: {x: 0, y: -4, z: 0}
 --- !u!1001 &3365544783026771909
 PrefabInstance:
   m_ObjectHideFlags: 0
