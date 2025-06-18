@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PushableStone : MonoBehaviour
 {
-    public float targetZRotation = -20f;           // angle de rotation final
-    public float pushDuration = 0.2f;              // durée de l'animation
-    public GameObject[] lasersToDisable;           // objets à désactiver
+    public float targetZRotation = -20f;          
+    public float pushDuration = 0.2f;            
+    public GameObject[] lasersToDisable;           
 
     private bool isPushed = false;
     private Quaternion originalRotation;
