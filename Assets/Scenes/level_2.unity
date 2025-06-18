@@ -5516,7 +5516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6fa853c9ba6bf498e2d575035adf08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 830305387}
   plateSound: {fileID: 8300000, guid: 0a07c932c80576d439b277efc3cc7564, type: 3}
   doorSound: {fileID: 8300000, guid: 08612a245dac97a438a50de73807479c, type: 3}
   teleportZone: {fileID: 60128161}
