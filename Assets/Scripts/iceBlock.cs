@@ -3,7 +3,7 @@ using UnityEngine;
 public class iceBlock : MonoBehaviour
 {
     [SerializeField] private float shrinkDuration = 5f;
-    [SerializeField] private Vector3 targetScale = new Vector3(0.0004f, 0.0004f, 0.0004f);
+    [SerializeField] private Vector3 targetScale = new Vector3(0.009f, 0.009f, 0.009f);
     [SerializeField] private GameObject taupe;
 
     private Vector3 originalScale;
@@ -12,11 +12,14 @@ public class iceBlock : MonoBehaviour
     private bool hasMelted = false;
     private bool taupeReleased = false;
 
+    [SerializeField] private float meltAcceleration = 3f;
+
     private void Start()
     {
         originalScale = transform.localScale;
 
-        if (taupe.transform.IsChildOf(transform))
+        
+        if (taupe != null && taupe.transform.IsChildOf(transform))
         {
             taupe.transform.SetParent(null);
         }
@@ -27,10 +30,16 @@ public class iceBlock : MonoBehaviour
         if (isMelting && !hasMelted)
         {
             meltTimer += Time.deltaTime;
-            float t = meltTimer / shrinkDuration;
-            transform.localScale = Vector3.Lerp(originalScale, targetScale, t);
 
-            if (meltTimer >= shrinkDuration)
+            
+            float t = meltTimer / shrinkDuration;
+
+            
+            float acceleratedT = Mathf.Pow(t, meltAcceleration);
+
+            transform.localScale = Vector3.Lerp(originalScale, targetScale, acceleratedT);
+
+            if (t >= 1f)
             {
                 hasMelted = true;
 
