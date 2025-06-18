@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LaserTrigger : MonoBehaviour
 {
-    public Vector3 spawnPoint;  // Coordonnées du point de retour
+    public Vector3 spawnPoint;  
 
     private void OnTriggerEnter(Collider other)
     {

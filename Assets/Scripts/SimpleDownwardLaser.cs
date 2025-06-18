@@ -3,9 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class SimpleDownwardLaser : MonoBehaviour
 {
-    public float laserLength = 8f;       // 📏 Longueur du laser
-    public float startWidth = 0.08f;     // 🔴 Épaisseur au début (modifiable dans l'inspecteur)
-    public float endWidth = 0.08f;       // 🔴 Épaisseur à la fin
+    public float laserLength = 8f;       
+    public float startWidth = 0.08f;     
+    public float endWidth = 0.08f;       
 
     private LineRenderer line;
 

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PushableStone : MonoBehaviour
 {
-    public float pushDistance = 0.1f;           // profondeur enfoncement
-    public float pushDuration = 0.2f;           // durée animation
-    public GameObject[] lasersToDisable;        // tableau des lasers à désactiver
+    public float pushDistance = 0.1f;           
+    public float pushDuration = 0.2f;          
+    public GameObject[] lasersToDisable;       
 
     private bool isPushed = false;
     private Vector3 originalPosition;
@@ -14,7 +14,7 @@ public class PushableStone : MonoBehaviour
     void Start()
     {
         originalPosition = transform.localPosition;
-        targetPosition = originalPosition + transform.forward * -pushDistance;
+        targetPosition = originalPosition + transform.right * -pushDistance;  
     }
 
     public void PushStone()
@@ -24,11 +24,10 @@ public class PushableStone : MonoBehaviour
             isPushed = true;
             timer = 0f;
 
-            // Désactive tous les lasers
             foreach (GameObject laser in lasersToDisable)
             {
                 if (laser != null)
-                    Destroy(laser); // ou Destroy(laser); si tu veux vraiment les supprimer
+                    Destroy(laser); 
             }
         }
     }
