@@ -13,7 +13,7 @@ public class PressurePlate : MonoBehaviour
     [Header("Plate Movement")]
     public Transform plateVisual;
     public float pressDepth = 0.1f;
-    public float pressSpeed = 5f;
+    public float pressSpeed = 10f; // Augmente pour descente plus rapide
 
     private Vector3 initialPosition;
     private Vector3 pressedPosition;
@@ -68,14 +68,17 @@ public class PressurePlate : MonoBehaviour
 
     IEnumerator PlaySequence(bool pressed)
     {
-        // 1. Jouer le son de la plaque
-        PlaySound(plateSound);
-        yield return new WaitForSeconds(plateSound.length);
+        // 1. Jouer le son de la plaque plus rapidement
+        float pitch = 1.5f;
+        audioSource.pitch = pitch;
+        audioSource.PlayOneShot(plateSound);
+        yield return new WaitForSeconds(plateSound.length / pitch);
+        audioSource.pitch = 1f;
 
-        // 2. Jouer le son de la porte
+        // 2. Jouer le son de la porte à vitesse normale
         PlaySound(doorSound);
 
-        // 3. Modifier la zone de téléportation
+        // 3. Activer/désactiver la zone de téléportation
         teleportZone.SetActive(pressed);
     }
 
@@ -83,6 +86,7 @@ public class PressurePlate : MonoBehaviour
     {
         if (clip != null && audioSource != null)
         {
+            audioSource.pitch = 1f;
             audioSource.PlayOneShot(clip);
         }
     }
