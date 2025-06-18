@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class PressurePlate : MonoBehaviour
@@ -10,7 +11,7 @@ public class PressurePlate : MonoBehaviour
     public GameObject teleportZone;
 
     [Header("Plate Movement")]
-    public Transform plateVisual; // Visuel à déplacer
+    public Transform plateVisual;
     public float pressDepth = 0.1f;
     public float pressSpeed = 5f;
 
@@ -19,6 +20,7 @@ public class PressurePlate : MonoBehaviour
 
     private HashSet<Collider> collidersOnPlate = new HashSet<Collider>();
     private bool isPressed = false;
+    private Coroutine soundSequenceCoroutine;
 
     void Start()
     {
@@ -53,27 +55,28 @@ public class PressurePlate : MonoBehaviour
         if (shouldBePressed && !isPressed)
         {
             isPressed = true;
-            OnPressed();
+            if (soundSequenceCoroutine != null) StopCoroutine(soundSequenceCoroutine);
+            soundSequenceCoroutine = StartCoroutine(PlaySequence(true));
         }
         else if (!shouldBePressed && isPressed)
         {
             isPressed = false;
-            OnReleased();
+            if (soundSequenceCoroutine != null) StopCoroutine(soundSequenceCoroutine);
+            soundSequenceCoroutine = StartCoroutine(PlaySequence(false));
         }
     }
 
-    void OnPressed()
+    IEnumerator PlaySequence(bool pressed)
     {
+        // 1. Jouer le son de la plaque
         PlaySound(plateSound);
-        PlaySound(doorSound);
-        teleportZone.SetActive(true);
-    }
+        yield return new WaitForSeconds(plateSound.length);
 
-    void OnReleased()
-    {
-        PlaySound(plateSound);
+        // 2. Jouer le son de la porte
         PlaySound(doorSound);
-        teleportZone.SetActive(false);
+
+        // 3. Modifier la zone de téléportation
+        teleportZone.SetActive(pressed);
     }
 
     void PlaySound(AudioClip clip)

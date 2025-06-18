@@ -503,6 +503,8 @@ GameObject:
   - component: {fileID: 60128165}
   - component: {fileID: 60128164}
   - component: {fileID: 60128163}
+  - component: {fileID: 60128167}
+  - component: {fileID: 60128166}
   m_Layer: 0
   m_Name: PlaneFloors (2)
   m_TagString: Untagged
@@ -599,6 +601,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60128161}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &60128166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60128161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6687779d5099ed42ad0243235fadfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: level_3
+  playerTag: Player
+--- !u!65 &60128167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60128161}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &71841069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1655,6 +1692,10 @@ PrefabInstance:
     - target: {fileID: 8298045291338814966, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298045291338814966, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8404871649812681847, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_CameraYOffset
@@ -5497,8 +5538,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.30996555, y: 0.046203364, z: 0.3322608}
-  m_Center: {x: 0.016225629, y: 0.022900755, z: 0.0006098375}
+  m_Size: {x: 0.3, y: 0.08, z: 0.3}
+  m_Center: {x: 0.015, y: 0, z: 0}
 --- !u!64 &830305383 stripped
 MeshCollider:
   m_CorrespondingSourceObject: {fileID: 4683358075538614827, guid: b06fc5ecf0e549542ab72f9416a5d23c, type: 3}
