@@ -5,15 +5,13 @@ public class PressurePlate : MonoBehaviour
 {
     [Header("Dependencies")]
     public AudioSource audioSource;
-    public AudioClip pressSound;
-    public AudioClip releaseSound;
-    public AudioClip doorUnlockSound;
-    public AudioClip doorLockSound;
+    public AudioClip plateSound;     // Un seul son pour la plaque (monte/descend)
+    public AudioClip doorSound;      // Un seul son pour la porte (ouvre/ferme)
     public GameObject teleportZone;
 
     [Header("Plate Movement")]
-    public Transform plateVisual; // référence au mesh ou visuel de la plaque
-    public float pressDepth = 0.05f; // profondeur d'enfoncement
+    public Transform plateVisual; // Visuel à déplacer
+    public float pressDepth = 0.1f;
     public float pressSpeed = 5f;
 
     private Vector3 initialPosition;
@@ -66,15 +64,23 @@ public class PressurePlate : MonoBehaviour
 
     void OnPressed()
     {
-        audioSource.PlayOneShot(pressSound);
-        audioSource.PlayOneShot(doorUnlockSound);
+        PlaySound(plateSound);
+        PlaySound(doorSound);
         teleportZone.SetActive(true);
     }
 
     void OnReleased()
     {
-        audioSource.PlayOneShot(releaseSound);
-        audioSource.PlayOneShot(doorLockSound);
+        PlaySound(plateSound);
+        PlaySound(doorSound);
         teleportZone.SetActive(false);
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 }
