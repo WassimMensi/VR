@@ -2,17 +2,24 @@ using UnityEngine;
 
 public class iceBlock : MonoBehaviour
 {
-    [SerializeField] private float shrinkDuration = 25f;
-    [SerializeField] private Vector3 targetScale = new Vector3(0.00004f, 0.00004f, 0.00004f);
+    [SerializeField] private float shrinkDuration = 5f;
+    [SerializeField] private Vector3 targetScale = new Vector3(0.0004f, 0.0004f, 0.0004f);
+    [SerializeField] private GameObject taupe;
 
     private Vector3 originalScale;
     private float meltTimer = 0f;
     private bool isMelting = false;
     private bool hasMelted = false;
+    private bool taupeReleased = false;
 
     private void Start()
     {
         originalScale = transform.localScale;
+
+        if (taupe.transform.IsChildOf(transform))
+        {
+            taupe.transform.SetParent(null);
+        }
     }
 
     private void Update()
@@ -26,18 +33,18 @@ public class iceBlock : MonoBehaviour
             if (meltTimer >= shrinkDuration)
             {
                 hasMelted = true;
-                Destroy(gameObject); 
+
+                if (taupe != null && !taupeReleased)
+                {
+                    taupe.AddComponent<taupeFloat>();
+                    taupeReleased = true;
+                }
+
+                Destroy(gameObject);
             }
         }
     }
 
-    public void StartMelting()
-    {
-        isMelting = true;
-    }
-
-    public void StopMelting()
-    {
-        isMelting = false;
-    }
+    public void StartMelting() => isMelting = true;
+    public void StopMelting() => isMelting = false;
 }
