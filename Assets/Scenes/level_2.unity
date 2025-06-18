@@ -5519,7 +5519,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   plateSound: {fileID: 8300000, guid: 0a07c932c80576d439b277efc3cc7564, type: 3}
   doorSound: {fileID: 8300000, guid: 08612a245dac97a438a50de73807479c, type: 3}
-  teleportZone: {fileID: 0}
+  teleportZone: {fileID: 60128161}
   plateVisual: {fileID: 0}
   pressDepth: 0.1
   pressSpeed: 5
