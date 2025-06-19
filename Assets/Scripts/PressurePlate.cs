@@ -38,6 +38,7 @@ public class PressurePlate : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.isTrigger) return;
+        Debug.Log("Trigger entered by: " + other.name);
         collidersOnPlate.Add(other);
         UpdatePlateState();
     }
