@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RespawnIfFallen : MonoBehaviour
 {
-    public float fallThreshold = -10f;         // Y en dessous duquel l'objet est "perdu"
+    [SerializeField] public float fallThreshold = -10f;         // Y en dessous duquel l'objet est "perdu"
     public Vector3 respawnPosition;            // Où il réapparaît
     public Quaternion respawnRotation;         // Optionnel : angle de départ
 
