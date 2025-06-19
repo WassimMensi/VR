@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class taupeFloat : MonoBehaviour
 {
-    [Header("Lévitation")]
     public float floatAmplitude = 0.2f;
     public float floatFrequency = 1f;
 
-    [Header("Halo automatique")]
     [SerializeField] private string haloObjectName = "TaupeHaloLight";
 
     private GameObject haloObject;
@@ -22,10 +20,8 @@ public class taupeFloat : MonoBehaviour
             haloObject = haloTransform.gameObject;
             haloObject.SetActive(true);
         }
-        else
-        {
-            Debug.LogWarning($"TaupeFloat: Aucun objet enfant nommé '{haloObjectName}' trouvé sur {gameObject.name}");
-        }
+
+        taupeManager.Instance?.TaupeLibérée();
     }
 
     void Update()

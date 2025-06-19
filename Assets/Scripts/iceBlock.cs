@@ -18,10 +18,14 @@ public class iceBlock : MonoBehaviour
     {
         originalScale = transform.localScale;
 
-        
-        if (taupe != null && taupe.transform.IsChildOf(transform))
+        if (taupe != null)
         {
-            taupe.transform.SetParent(null);
+            taupeManager.Instance?.RegisterTaupe();
+
+            if (taupe.transform.IsChildOf(transform))
+            {
+                taupe.transform.SetParent(null);
+            }
         }
     }
 
@@ -31,10 +35,7 @@ public class iceBlock : MonoBehaviour
         {
             meltTimer += Time.deltaTime;
 
-            
             float t = meltTimer / shrinkDuration;
-
-            
             float acceleratedT = Mathf.Pow(t, meltAcceleration);
 
             transform.localScale = Vector3.Lerp(originalScale, targetScale, acceleratedT);
@@ -47,6 +48,7 @@ public class iceBlock : MonoBehaviour
                 {
                     taupe.AddComponent<taupeFloat>();
                     taupeReleased = true;
+
                 }
 
                 Destroy(gameObject);
