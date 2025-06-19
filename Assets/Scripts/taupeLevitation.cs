@@ -2,29 +2,30 @@ using UnityEngine;
 
 public class taupeFloat : MonoBehaviour
 {
+    [Header("Lévitation")]
     public float floatAmplitude = 0.2f;
     public float floatFrequency = 1f;
-    public Color haloColor = new Color(1f, 0.85f, 0.5f); 
-    public float haloIntensity = 3f;
-    public float haloRange = 2f;
-    public Vector3 haloOffset = new Vector3(0f, 0.5f, -0.3f);
 
+    [Header("Halo automatique")]
+    [SerializeField] private string haloObjectName = "TaupeHaloLight";
+
+    private GameObject haloObject;
     private Vector3 startPos;
 
     void Start()
     {
         startPos = transform.position;
 
-        GameObject halo = new GameObject("TaupeHaloLight");
-        halo.transform.SetParent(transform);
-        halo.transform.localPosition = haloOffset;
-
-        Light light = halo.AddComponent<Light>();
-        light.type = LightType.Point;
-        light.color = haloColor;
-        light.intensity = haloIntensity;
-        light.range = haloRange;
-        light.shadows = LightShadows.None;
+        Transform haloTransform = transform.Find(haloObjectName);
+        if (haloTransform != null)
+        {
+            haloObject = haloTransform.gameObject;
+            haloObject.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning($"TaupeFloat: Aucun objet enfant nommé '{haloObjectName}' trouvé sur {gameObject.name}");
+        }
     }
 
     void Update()
