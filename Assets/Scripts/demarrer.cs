@@ -4,19 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class demarrer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayGame(){
         SceneManager.LoadScene("level_1");
+    }
+
+    public void Quitter()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Quitte le mode Play dans l'éditeur
+#else
+        Application.Quit(); // Ferme l'application buildée
+#endif
     }
 }
