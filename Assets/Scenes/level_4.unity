@@ -464,7 +464,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -1382,8 +1382,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4118526434313592413, guid: 6e3b9744da3821a41983e26cb4deda56, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118526434313592413, guid: 6e3b9744da3821a41983e26cb4deda56, type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118526434313592413, guid: 6e3b9744da3821a41983e26cb4deda56, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4516345739728118584, guid: 6e3b9744da3821a41983e26cb4deda56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5224,6 +5232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortieZone: {fileID: 1676951919}
+  firstSFX: {fileID: 0}
+  secondSFX: {fileID: 0}
 --- !u!1001 &1381666770
 PrefabInstance:
   m_ObjectHideFlags: 0
