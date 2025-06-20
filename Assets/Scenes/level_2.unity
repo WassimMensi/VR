@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallThreshold: -10
-  respawnPosition: {x: -2.09, y: 1.096, z: 2.048}
+  respawnPosition: {x: -2.09, y: 1.085, z: 2.048}
   respawnRotation: {x: 0, y: 0.81915206, z: 0, w: 0.57357645}
 --- !u!1001 &174571157
 PrefabInstance:
@@ -7739,8 +7739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallThreshold: -10
-  respawnPosition: {x: 0, y: 0, z: 0}
-  respawnRotation: {x: 0, y: 0, z: 0, w: 0}
+  respawnPosition: {x: 13, y: 2.22, z: 16.9}
+  respawnRotation: {x: 0, y: 0.92387956, z: 0, w: -0.3826834}
 --- !u!114 &1129091339
 MonoBehaviour:
   m_ObjectHideFlags: 0
