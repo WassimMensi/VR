@@ -16,6 +16,7 @@ public class Taupe : MonoBehaviour
     float timeLeftSpawn;
     float timeLeftSpawnDuration;
     bool spawned=false;
+    bool gameStart=false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +29,7 @@ public class Taupe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!gameStart) return;
         float delta = Time.deltaTime;
         if (spawned) timeLeftLife -= delta;
         else timeLeftSpawn -= delta;
@@ -43,6 +45,11 @@ public class Taupe : MonoBehaviour
             timeLeftLife = life;
             despawn();
         }
+    }
+
+    public void startGame()
+    {
+        gameStart = true;
     }
 
     void spawn()
